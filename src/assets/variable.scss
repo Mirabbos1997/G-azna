@@ -1,0 +1,58 @@
+$primary: #165DE8;
+$muted: #899499;
+$silver: #E7E7E7;
+$light: #F1F2F4;
+$warning: #FF9B26;
+$danger: #EB4143;
+$success: #26BF56;
+$body: #313131;
+$info: #069CDF;
+$purple: #5148E7;
+$white: #fff;
+$palette: #21216B;
+$light-palette: #101161;
+$text: left, right, center, justify;
+$sizes: (
+        0: 0,
+        1: .25rem,
+        2: .5rem,
+        3: 1rem,
+        4: 1.5rem,
+        5: 3rem
+);
+$boxSizes: (
+        0: 0,
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%
+);
+
+$mediaSizesForWith: (
+        'xs': 375px,
+        'sm': 425px,
+        'md': 768px,
+        'lg': 1024px,
+        "xl": 1200px,
+);
+
+@each $t in $text {
+        .text-#{$t} {
+                text-align: $t;
+        }
+}
+
+
+$colors: (
+        "primary": $primary,
+        "muted": $muted,
+        "light": $light,
+        "warning": $warning,
+        "success": $success,
+        "silver": $silver,
+        "info": $info,
+        "danger": $danger,
+        "white" :$white,
+        "palette": $palette,
+        "light-palette": $light-palette
+);

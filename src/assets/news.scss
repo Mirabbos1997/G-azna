@@ -1,0 +1,26 @@
+.news-box img {
+    width: 100%;
+}
+
+.bottomLineText {
+    margin-top: -12px;
+    border: 1px solid #e0e3e6;
+    border-radius: 20px;
+    padding: 2px 8px;
+    color: #848e9f;
+    font-size: 14px;
+}
+
+.divider {
+    margin: 0;
+    background: linear-gradient(to right, #C4C4D8 30%, transparent 30%);
+    height: 2px;
+    /* Adjust the height of the divider as needed */
+}
+
+.orderDot {
+    width: 8px;
+    height: 8px;
+    background-color: #121262;
+    border-radius: 50%;
+}

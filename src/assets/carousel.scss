@@ -1,0 +1,46 @@
+.ant-carousel .slick-dots li button {
+    height: 12px;
+    border-radius: 50% !important;
+    width: 13px !important;
+    background-color: #ffff !important;
+}
+
+.ant-carousel {
+    margin-top: 50px;
+    /* Adjust spacing as needed */
+}
+
+.ant-carousel .slick-dots {
+    display: flex !important;
+    justify-content: start !important;
+    margin-left: 0 !important;
+    transform: translateY(80px) !important;
+}
+
+/* Style for the dots */
+.ant-carousel-dots li {
+    width: 10px;
+    /* Set the width of each dot */
+    height: 10px;
+    /* Set the height of each dot */
+    margin: 0 8px;
+    /* Adjust margin between dots as needed */
+    border-radius: 50%;
+    /* Make the dots rounded */
+    background-color: #ccc;
+    /* Set the background color of inactive dots */
+}
+
+/* Style for the active dot */
+.ant-carousel-dots li.ant-carousel-dot-active {
+    width: 20px !important;
+    /* Set the width of the active dot */
+    height: 20px !important;
+    /* Set the height of the active dot */
+    border-radius: 50% !important;
+    /* Make the active dot rounded */
+    border: 2px solid #ffff !important;
+    /* Set the border color and thickness for the active dot */
+    background-color: #ffff !important;
+    /* Set the background color of the active dot */
+}

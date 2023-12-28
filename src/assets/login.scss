@@ -1,0 +1,201 @@
+.login {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #F4F6F9;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 386px;
+    background-image: url("images/login-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  .login__header {
+    position: relative;
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 13px;
+    }
+    .icon-btn {
+      background: rgba(225, 228, 233, 0.13);
+    }
+  }
+  .login__form {
+    position: relative;
+    //top: 200px;
+    //left: calc(50% - 532px/2);
+    margin: 0 auto;
+    transform: translateY(150px);
+    z-index: 1;
+    width: 532px;
+    height: auto;
+    padding: 30px 50px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0 20px 40px rgba(150, 161, 183, 0.2);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .title {
+      h3 {
+        font-family: 'Gilroy', sans-serif;
+        font-size: 24px;
+        line-height: 30px;
+        color: #000000;
+      }
+      span {
+        font-family: 'Gilroy', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #717F9C;
+      }
+    }
+    .ant-form {
+      width: 100%;
+      .ant-select, .ant-select-selection-item {
+        font-family: 'Gilroy', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        color: #000000;
+      }
+      .ant-select-selector {
+        height: 54px;
+        padding: 14px;
+        border-radius: 10px;
+        border: 1px solid #E8EBF5;
+      }
+      .ant-btn {
+        width: 100%;
+        background: #222A46;
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 10px;
+      }
+    }
+    .atm {
+      font-family: 'Gilroy', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      color: #717F9C;
+      margin-top: auto;
+    }
+  }
+  .login__footer {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    p {
+      font-family: 'Gilroy', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      color: #717F9C;
+    }
+    h1 {
+      font-family: 'Gilroy', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 45px;
+      text-align: center;
+      color: #000000;
+    }
+  }
+}
+@include screen('md') {
+  .login {
+    padding: 0 20px;
+    &:before {
+      height: 300px;
+    }
+    .login__form {
+      transform: translateY(70px);
+      width: 100%;
+      padding: 30px;
+    }
+    .login__footer {
+      width: 100%;
+      bottom: 20px;
+      p {
+        font-size: 13px;
+        line-height: 20px;
+      }
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+@include screen('sm') {
+  .login {
+    padding: 0 20px;
+    &:before {
+      height: 300px;
+    }
+    .login__form {
+      transform: translateY(70px);
+      width: 100%;
+      padding: 30px;
+    }
+    .login__footer {
+      width: 100%;
+      bottom: 20px;
+      p {
+        font-size: 13px;
+        line-height: 20px;
+      }
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+@include screen('xs') {
+  .login {
+    padding: 0 20px;
+    &:before {
+      height: 300px;
+    }
+    .login__form {
+      transform: translateY(70px);
+      width: 100%;
+      padding: 30px;
+    }
+    .login__footer {
+      width: 100%;
+      bottom: 20px;
+      p {
+        font-size: 13px;
+        line-height: 20px;
+      }
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+}
