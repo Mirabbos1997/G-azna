@@ -119,7 +119,7 @@ const onClose = () => {
 <style lang="scss" scoped>
 .backToTop {
   position: fixed;
-  bottom: 220px;
+  bottom: 400px;
   left: 0px;
   z-index: 999999;
   border: none;

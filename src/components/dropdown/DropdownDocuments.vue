@@ -1,7 +1,7 @@
 <template>
   <a-dropdown>
     <a @click.prevent>
-      <h5 class="ant-dropdown-link text-white">HUJJATLAR <DownOutlined /></h5>
+      <h4 class="ant-dropdown-link text-white">HUJJATLAR <DownOutlined /></h4>
     </a>
     <template #overlay>
       <a-menu>

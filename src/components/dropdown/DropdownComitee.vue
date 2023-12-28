@@ -1,45 +1,73 @@
 <template>
-  <a-dropdown :trigger="['click']" :placement="bottomRight">
-    <a @click.prevent>
-      <h5 class="ant-dropdown-link text-white">
+  <a-dropdown :trigger="['click']" placement="bottom" class="mx-3 my-1">
+    <div>
+      <h4 class="ant-dropdown-link text-white">
         QO'MITA
         <DownOutlined />
-      </h5>
-    </a>
+      </h4>
+    </div>
     <template #overlay>
-      <container>
-        <a-menu
-          style="background-color: #121262; padding: 10px; width: 750px"
-          class="menu-vertical m-2"
-        >
-          <a-row :gutter="[16, 16]">
-            <a-col :lg="6" :xl="6" :xxl="6">
-              <a-menu-item class="bg-palette">
-                <a-router-link>
-                  <h5 class="text-white">Biz haqimizda</h5>
-                </a-router-link>
-              </a-menu-item>
-            </a-col>
-            <a-col :lg="6" :xl="6" :xxl="6">
-              <a-menu-item class="bg-palette">
-                <a-router-link>
-                  <h5 class="text-white">
-                    G'aznachilikning vazifalari, funksiyalari, nizomi va ish
-                    rejasi
-                  </h5>
-                </a-router-link>
-              </a-menu-item>
-            </a-col>
-          </a-row>
-          <!-- <a-menu-item>
-          <a href="javascript:;">2nd menu item</a>
-        </a-menu-item>
-        <a-menu-item>
-          <a href="javascript:;">3rd menu item</a>
-        </a-menu-item> -->
-        </a-menu>
-      </container>
+      <a-menu
+        style="background-color: #121262; padding: 10px; width: 880px"
+        class="menu-vertical mt-2"
+      >
+        <a-row :gutter="[16, 16]">
+          <a-col :lg="6" :xl="6" :xxl="6">
+            <div class="bg-palette">
+              <router-link to="/about">
+                <h5 class="text-white p-2 pointer">Biz haqimizda</h5>
+              </router-link>
+            </div>
+          </a-col>
+          <a-col :lg="6" :xl="6" :xxl="6">
+            <div class="bg-palette">
+              <router-link to="">
+                <h5 class="text-white p-2">
+                  G'aznachilikning vazifalari, funksiyalari, nizomi va ish
+                  rejasi
+                </h5>
+              </router-link>
+            </div>
+          </a-col>
+          <a-col :lg="6" :xl="6" :xxl="6">
+            <div class="bg-palette">
+              <router-link to="">
+                <h5 class="text-white p-2">G'aznachilikning tuzilmasi</h5>
+              </router-link>
+            </div>
+          </a-col>
+          <a-col :lg="6" :xl="6" :xxl="6">
+            <div class="bg-palette">
+              <router-link to="/adminstration">
+                <h5 class="text-white p-2">Raxbariyat</h5>
+              </router-link>
+            </div>
+          </a-col>
+          <a-col :lg="6" :xl="6" :xxl="6">
+            <div class="bg-palette">
+              <router-link to="">
+                <h5 class="text-white p-2">Markaziy apparat</h5>
+              </router-link>
+            </div>
+          </a-col>
+          <a-col :lg="6" :xl="6" :xxl="6">
+            <div class="bg-palette">
+              <router-link to="">
+                <h5 class="text-white p-2">Xududiy bo'linmalar</h5>
+              </router-link>
+            </div>
+          </a-col>
+          <a-col :lg="6" :xl="6" :xxl="6">
+            <div class="bg-palette p-2">
+              <router-link to="">
+                <h5 class="text-white">Gender tenglik</h5>
+              </router-link>
+            </div>
+          </a-col>
+        </a-row>
+      </a-menu>
     </template>
+    <!-- </container> -->
   </a-dropdown>
 </template>
 
@@ -75,5 +103,9 @@ export default defineComponent({
 .ant-menu-vertical,
 .ant-menu-vertical-left {
   border-right: none !important;
+}
+
+.menuHoverFocus:hover {
+  background-color: #2a2e70;
 }
 </style>

@@ -7,8 +7,8 @@ import backgroundImage from "@/assets/images/StatisticBg.png";
     class="statistic-page"
     :style="{ backgroundImage: 'url(' + backgroundImage + ')' }"
   >
-    <div class="statistic-banner">
-      <container>
+    <container>
+      <div class="statistic-banner">
         <a-row :gutter="[16, 16]" class="px-2">
           <a-col :lg="12" :xl="12" :xxl="12" class="marginTop">
             <div class="bg-palette">
@@ -132,8 +132,8 @@ import backgroundImage from "@/assets/images/StatisticBg.png";
             </div>
           </a-col>
         </a-row>
-      </container>
-    </div>
+      </div>
+    </container>
   </section>
 </template>
 

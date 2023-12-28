@@ -17,7 +17,7 @@ const activeKey = ref("first");
     <container>
       <section class="home-page-banner">
         <Navbar />
-        <a-row>
+        <a-row style="margin-top:120px">
           <a-col :lg="20" :xl="20" :xxl="20">
             <Carousel />
           </a-col>

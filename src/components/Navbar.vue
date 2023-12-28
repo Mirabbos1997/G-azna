@@ -1,4 +1,3 @@
-
 <script setup>
 import Container from "./Container.vue";
 import { onMounted, reactive, ref, watch } from "vue";
@@ -29,7 +28,7 @@ watch(route, () => {
 <template>
   <nav>
     <container class="mx-4">
-      <a-row gutter="16" :align="'middle'" class="mx-1">
+      <a-row gutter="16" :align="'middle'" class="mx-1 py-4">
         <a-col class="text-white" style="border-right: 1px solid #697b9d"
           >Sayt xaritasi</a-col
         >
@@ -64,21 +63,27 @@ watch(route, () => {
             <img
               src="@/assets/images/minstryGerb.png"
               alt=""
-              style="width: 250px"
+              style="width: 300px"
             />
           </router-link>
         </a-col>
         <a-col :xs="12" :sm="12" :md="10" :lg="18" :xl="18" :xxl="18">
           <a-row>
-            <a-col class="ml-auto"
-              ><h5 class="text-white my-1">BOSH SAHIFA</h5></a-col
-            >
-            <a-col class="mx-3 my-1"><DropdownComitee /></a-col>
-            <a-col><h5 class="text-white my-1">OCHIQ MA'LUMOTLAR</h5></a-col>
+            <a-col class="ml-auto">
+              <router-link to="/">
+                <h4 class="text-white my-1">BOSH SAHIFA</h4>
+              </router-link>
+            </a-col>
+            <a-col class="menuHoverFocus pointer "><DropdownComitee /></a-col>
+            <a-col>
+              <router-link to="">
+                <h4 class="text-white my-1">OCHIQ MA'LUMOTLAR</h4>
+              </router-link>
+            </a-col>
             <a-col class="mx-3 my-1"><DropdownCorruption /></a-col>
             <a-col class="my-1"><DropdownInfoService /></a-col>
             <a-col class="mx-3 my-1"><DropdownDocuments /></a-col>
-            <a-col><h5 class="text-white my-1">BOG'LANISH</h5></a-col>
+            <a-col><h4 class="text-white my-1">BOG'LANISH</h4></a-col>
             <a-col class="mx-3">
               <img
                 src="@/assets/images/NavbarFrame.png"
@@ -92,7 +97,6 @@ watch(route, () => {
     </container>
   </nav>
 </template>
-
 
 <style scoped>
 @import "@/assets/navbar.scss";

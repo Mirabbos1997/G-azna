@@ -1,0 +1,27 @@
+.orderDot {
+    width: 8px;
+    height: 8px;
+    background-color: #636C79;
+    border-radius: 50%;
+}
+
+.isActive {
+    color: #181866;
+    font-weight: 700;
+}
+
+.listItem {
+    color: #636c79;
+}
+
+.rahbariyat {
+    background-color: #f7f7f8;
+
+    background: {
+        image: url("@/assets/images/IMV-white.png");
+        size: 40%;
+        repeat: no-repeat;
+        position: right bottom;
+        // padding-right: 25px;
+    }
+}

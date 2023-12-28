@@ -91,6 +91,24 @@
             <h4 class="text-white">Manzil:</h4>
             <p class="text-white">Sharof Rashidov ko‘chasi 16A</p>
           </a-col>
+          <a-col :lg="24" :xl="24" :xxl="24">
+            <a-divider style="background-color: #2a2e54"></a-divider>
+          </a-col>
+          <a-col :lg="24" :xl="24" :xxl="24">
+            <a-row :gutter="[16, 16]">
+              <a-col :lg="16" :xl="16" :xxl="16">
+                <h4 class="text-white">
+                  Copyright © 2023. G‘aznachilik xizmati qo‘mitasi. Barcha
+                  huquqlar himoyalangan
+                </h4>
+              </a-col>
+              <a-col :lg="8" :xl="8" :xxl="8" >
+                <h4 class="text-white" style="float:right">
+                  Sayt yaratuvchisi: IMV Axborot texnologiyalari markazi
+                </h4>
+              </a-col>
+            </a-row>
+          </a-col>
         </a-row>
       </div>
     </container>
@@ -111,6 +129,6 @@ footer {
   background-color: #101161;
 }
 .footer-body {
-  margin: 0 50px;
+  margin: 0 35px;
 }
 </style>
