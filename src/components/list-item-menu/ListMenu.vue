@@ -7,7 +7,6 @@
           class="pointer"
           @click="toggleSphere(item.id, item.link)"
         >
-          <!-- <router-link :to="`${item.link}`"> -->
           <h3 :class="{ isActive: isActive == item.id }">
             {{ item.title }}
           </h3>
